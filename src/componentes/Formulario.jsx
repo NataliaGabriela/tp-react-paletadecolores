@@ -24,9 +24,10 @@ const Formulario = () => {
     <>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
+        <Form.Label>Administrar Colores</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ingrese un color ej: Blue"
+            placeholder="Ingrese un color en inglés ej: Blue"
             minLength={3}
             maxLength={50}
             onChange={(e) => setColor(e.target.value)}
