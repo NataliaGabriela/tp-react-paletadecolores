@@ -1,5 +1,6 @@
+import '../App.css'
 import { useState, useEffect } from "react";
-import { FormGroup } from "react-bootstrap";
+import { Col, Container, FormGroup, Row } from "react-bootstrap";
 import { Button, Form } from "react-bootstrap";
 import ListaColores from "./ListaColores";
 const Formulario = () => {
@@ -22,9 +23,17 @@ const Formulario = () => {
   };
   return (
     <>
-      <Form onSubmit={handleSubmit}>
+    <Container className="my-5 border border-secondary-subtle py-5 shadow rounded">
+      <h5>Administrar Colores</h5>
+    <Row className="filaForm p-4">
+    <Col>
+      <div >
+        <div className="border border-black" style={{width: "100px", height: "100px",background: color, margin: "auto" }}></div>
+      </div>
+      </Col>
+      <Col>
+      <Form  onSubmit={handleSubmit}>
         <FormGroup>
-        <Form.Label>Administrar Colores</Form.Label>
           <Form.Control
             type="text"
             placeholder="Ingrese un color en inglés ej: Blue"
@@ -33,14 +42,15 @@ const Formulario = () => {
             onChange={(e) => setColor(e.target.value)}
             value={color}
           />
-          <Button variant="info" className="mx-2" type="submit">
+          <Button variant="info" className="my-3 shadow rounded" type="submit">
             Guardar
           </Button>
         </FormGroup>
       </Form>
-      <div className="flex gap-1">
-        <div style={{width: "100px", height: "100px",background: color}}></div>
-      </div>
+      </Col>
+      
+      </Row>
+      </Container>
       <ListaColores colores={colores} borrarColor={borrarColor}></ListaColores>
     </>
   );
