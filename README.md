@@ -1,8 +1,11 @@
-# React + Vite
+TP REACT ROLLINGCODE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ejercicios de introducción a React: Paletas de Colores
+Consigna: Crear un proyecto de react que muestre un formulario con un input y un button que permite guardar un color en el localstorage
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Demo Deply del proyecto https://app.netlify.com/sites/tp-react-paletadecolores/
+
+Librerias 📚 Bootstrap v5.3.2
+
+Autor ✒️ Natalia Lopez
